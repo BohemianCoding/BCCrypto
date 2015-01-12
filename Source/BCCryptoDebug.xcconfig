@@ -1,3 +1,0 @@
-#include "../BCFoundation/Configs/BCDebug.xcconfig"
-
-#include "BCCryptoShared.xcconfig"

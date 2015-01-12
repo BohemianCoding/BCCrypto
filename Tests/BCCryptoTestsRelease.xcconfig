@@ -1,2 +1,0 @@
-#include "../BCFoundation/Configs/BCTestsRelease.xcconfig"
-#include "BCCryptoTests.xcconfig"

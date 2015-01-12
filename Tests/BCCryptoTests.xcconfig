@@ -1,3 +1,0 @@
-#include "../Source/BCCryptoShared.xcconfig"
-
-MODULEMAP_FILE = Source/module.modulemap
