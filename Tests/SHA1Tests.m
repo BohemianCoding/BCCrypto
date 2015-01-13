@@ -7,9 +7,8 @@
 //
 
 @import Cocoa;
-@import BCCrypto;
 
-//#import <BCCrypto/BCCrypto.h>
+#import <BCCrypto/BCCrypto.h>
 #import <ECUnitTests/ECUnitTests.h>
 
 @interface SHA1Tests : ECTestCase
