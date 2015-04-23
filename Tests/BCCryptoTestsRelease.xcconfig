@@ -1,4 +1,2 @@
 #include "../BCFoundation/Configs/BCTestsRelease.xcconfig"
 #include "BCCryptoTests.xcconfig"
-
-LLVM_LTO = NO
