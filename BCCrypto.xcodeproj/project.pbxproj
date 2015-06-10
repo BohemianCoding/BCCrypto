@@ -35,7 +35,7 @@
 		5B42DE9B1A63D9F60025C1EA /* BCCryptoDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = BCCryptoDebug.xcconfig; path = Source/BCCryptoDebug.xcconfig; sourceTree = SOURCE_ROOT; };
 		5B42DE9C1A63D9F60025C1EA /* BCCryptoRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = BCCryptoRelease.xcconfig; path = Source/BCCryptoRelease.xcconfig; sourceTree = SOURCE_ROOT; };
 		5B42DE9D1A63D9F60025C1EA /* BCCryptoShared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = BCCryptoShared.xcconfig; path = Source/BCCryptoShared.xcconfig; sourceTree = SOURCE_ROOT; };
-		5B42DE9F1A63DB3D0025C1EA /* BCCryptoTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BCCryptoTests.xcconfig; sourceTree = "<group>"; };
+		5B42DE9F1A63DB3D0025C1EA /* BCCryptoTestsShared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BCCryptoTestsShared.xcconfig; sourceTree = "<group>"; };
 		5B42DEA01A63DB3D0025C1EA /* BCCryptoTestsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BCCryptoTestsDebug.xcconfig; sourceTree = "<group>"; };
 		5B42DEA11A63DB3D0025C1EA /* BCCryptoTestsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BCCryptoTestsRelease.xcconfig; sourceTree = "<group>"; };
 		5B42DEA21A63DBDA0025C1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				5B42DEA21A63DBDA0025C1EA /* Info.plist */,
-				5B42DE9F1A63DB3D0025C1EA /* BCCryptoTests.xcconfig */,
+				5B42DE9F1A63DB3D0025C1EA /* BCCryptoTestsShared.xcconfig */,
 				5B42DEA01A63DB3D0025C1EA /* BCCryptoTestsDebug.xcconfig */,
 				5B42DEA11A63DB3D0025C1EA /* BCCryptoTestsRelease.xcconfig */,
 				5B42DEAB1A63E2460025C1EA /* SHA1Tests.m */,
@@ -191,7 +191,7 @@
 		5B42DE751A63D1930025C1EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Bohemian Coding";
 				TargetAttributes = {
 					5B42DE7C1A63D1930025C1EA = {
@@ -276,7 +276,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B42DE9B1A63D9F60025C1EA /* BCCryptoDebug.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -284,7 +283,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B42DE9C1A63D9F60025C1EA /* BCCryptoRelease.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -292,12 +290,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B42DEA01A63DB3D0025C1EA /* BCCryptoTestsDebug.xcconfig */;
 			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -305,8 +297,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B42DEA11A63DB3D0025C1EA /* BCCryptoTestsRelease.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};

@@ -1,2 +1,2 @@
 #include "../BCFoundation/Configs/BCTestsDebug.xcconfig"
-#include "BCCryptoTests.xcconfig"
+#include "BCCryptoTestsShared.xcconfig"
