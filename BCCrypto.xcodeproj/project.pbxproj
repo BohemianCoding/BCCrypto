@@ -262,14 +262,12 @@
 /* Begin XCBuildConfiguration section */
 		5B42DE8F1A63D1930025C1EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B42DE9B1A63D9F60025C1EA /* BCCryptoDebug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		5B42DE901A63D1930025C1EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B42DE9C1A63D9F60025C1EA /* BCCryptoRelease.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
